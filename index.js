@@ -1,9 +1,9 @@
 require("datejs")
 
+function combineUsers(a1=[], a2=[], a3=[]){
 
-function combineUsers(...args){
   const combinedObject = {
-    users: [...args],
+    users: [...a1, ...a2, ...a3],
     merge_date: Date.today().toString("M/d/yyyy")
   }
 return combinedObject
